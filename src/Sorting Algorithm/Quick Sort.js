@@ -73,7 +73,7 @@ function quicksort(array) {
     for (var i = 1; i < array.length; i++) {
       array[i] < pivot ? left.push(array[i]) : right.push(array[i]);
     }
-  
+  console.log(left);
     return quicksort(left).concat(pivot, quicksort(right));
   };
   

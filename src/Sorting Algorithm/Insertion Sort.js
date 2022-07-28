@@ -1,11 +1,11 @@
 /*  Insertion Sort step-by-step
-Insertion Sort works by comparing an element with the elements to its left, until it reaches an element that is smaller than it; the element is then inserted in front of the smaller element.
-
-Insertion Sort gif
-The gif above shows how Insertion Sort works. Let’s go through Insertion Sort step-by-step:
+Insertion Sort works by comparing an element with the elements to its left, until it 
+reaches an element that is smaller than it; the element is then inserted in front of
+ the smaller element.
 
 1- Pass the unsorted array [5, 2, 4, 6, 1, 3] into Insertion Sort.
-2- Start at the second element (2) of the array and compare it with its neighbouring element to the left (5).
+2- Start at the second element (2) of the array and compare it with its neighbouring 
+              element to the left (5).
 3- Is 2 < 5? Yes, so insert 2 into 5’s place => [2, 5, 4, 6, 1, 3]
 4- Now move up to the 3rd element (4) and compare with the value to the left (5).
 5- Is 4 < 5? Yes, so move to the next element on the left.

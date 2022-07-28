@@ -36,3 +36,5 @@ var sortArrayByParity = function (nums) {
     }
     return nums;
 };
+const res = sortArrayByParity([3,5,6,23,4,5,12,90,80])
+console.log(res);
