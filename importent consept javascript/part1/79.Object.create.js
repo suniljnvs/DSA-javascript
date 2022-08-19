@@ -1,0 +1,38 @@
+const userMethods = {
+    about : function(){
+        return `${this.firstName} is ${this.age} years old.`;
+    },
+    is18 : function(){
+        return this.age >= 18;
+    },
+    sing: function(){
+        return 'toon na na na la la ';
+    }
+}
+function createUser(firstName, lastName, email, age, address){
+    const user = Object.create(userMethods);// {}
+    user.firstName = firstName;
+    user.lastName = lastName;
+    user.email = email;
+    user.age = age;
+    user.address = address;
+    return user;
+}
+
+/* Object.create():-
+
+ => it basically creates a __proto__ of that object which written in the documents as [[prototype]]. . .
+=> what we will pass in the argument it is created that object's proto. .
+=> if we console.log() the object,just after the Object.create() method but before adding any properties into it then it will return empty object({}). . .
+=> when we cosole.log()the object's key , if it doesn't exist, then it will check the key in his proto object and if it exists in the proto object, then it will return the value of that key. . .
+
+=> proto and prototype are  not the same. . .they are different. . .but proto and [[prototype]] are same. . .
+
+ */
+
+const user1 = createUser('harshit', 'vashsith', 'harshit@gmail.com', 9, "my address");
+const user2 = createUser('harsh', 'vashsith', 'harshit@gmail.com', 19, "my address");
+const user3 = createUser('mohit', 'vashsitha', 'harshit@gmail.com', 17, "my address");
+console.log(user1);
+console.log(user1.about());
+console.log(user3.sing());

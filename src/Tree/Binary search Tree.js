@@ -128,7 +128,7 @@ bst.insert(4);
 
 
 var root = bst.getRootNode();
-
+// console.log(root);
 
 console.log('Preorder');
 

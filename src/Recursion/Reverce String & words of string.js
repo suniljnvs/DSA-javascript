@@ -20,9 +20,10 @@ function reverseSentenceByWord(sentence){
     let words= sentence.split(" ");
     for(let i=0;i<words.length; i++){
         words[i]= reverse(words[i])
+        console.log(words[i]);
     }
     return words.join(" ");
 }
 //console.log(reverseSentenceByWord(sentence));
-const res = reverseSentenceByWord("my  name is sunil kumar");
+const res = reverseSentenceByWord("my name is sunil kumar");
 console.log(res);

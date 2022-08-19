@@ -141,3 +141,34 @@ console.log(even_count)
 var x = 3; // one constaint time (c)
 var y = 4; // one constaint time (c)
 var z = x + y;  // two constaint time(2c)
+
+console.log("============================");
+
+// function sort(array){
+//     let reverce = [];
+//     let n = array.length - 1;
+//     for( let i =n;i>=3;i--){
+//         reverce.push(array[i])
+//     }
+//     return reverce;
+// }
+
+// const abc =sort([4,3,5,2,7,1,6])  // [  6, 1, 7, 2, 5, 3, 4]
+
+// console.log(abc);
+
+
+function sort(string){
+    let array = string.split("")
+    console.log(array)
+    let reverce = [];
+    let n = array.length - 1;
+    for( let i =n;i>=0;i--){
+        reverce.push(array[i])
+    }
+    return reverce.join("");
+}
+
+const abc =sort("sunil")  // [  6, 1, 7, 2, 5, 3, 4]
+
+console.log(abc);

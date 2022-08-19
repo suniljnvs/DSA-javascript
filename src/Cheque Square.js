@@ -21,7 +21,7 @@ function findSquare(array1, array2){
     }
     return true;
 }
-const result = findSquare([2,4,3,1] ,[16,6,9,1]);
+const result = findSquare([2,4,3,1] ,[16,4,9,1]);
 console.log(result);
 
 // time complexity is O(n^2)

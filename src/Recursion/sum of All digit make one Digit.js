@@ -10,12 +10,12 @@ Since 2 has only one digit, return it. */
 function sumToOne(num) {
     if (num < 10) return num;
 
-    const nxNum = String(num).split('');
-    const length = nxNum.length;
+    const newNum = String(num).split('');
+    // const length = nxNum.length;
     let sum = 0;
 
-    for (let i = 0; i < length; i++) {
-        sum = sum + +nxNum[i];
+    for (let i = 0; i < newNum.length; i++) {
+        sum = sum + +newNum[i];
        
     }
 

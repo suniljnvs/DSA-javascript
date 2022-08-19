@@ -74,6 +74,9 @@ function quicksort(array) {
       array[i] < pivot ? left.push(array[i]) : right.push(array[i]);
     }
   console.log(left);
+console.log("=========================");
+console.log(right);
+
     return quicksort(left).concat(pivot, quicksort(right));
   };
   

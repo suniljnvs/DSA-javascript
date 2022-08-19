@@ -11,5 +11,5 @@ function findMissing(arr){
     }
     return missing;
 }
-const res = findMissing([1,3,4,6,8,9]);
+const res = findMissing([1,6,8,9]);
 console.log(res);  // [ 2, 5, 7 ]

@@ -58,3 +58,4 @@ function inseSort(arr){
 const arr=[2,4,11,6,8,1,3,9,23];
 inseSort(arr);
 console.log(arr);
+

@@ -16,14 +16,15 @@ function isAnagram(string1,string2){
  let counter ={}
     for(let letter of string1){
         counter[letter]= (counter[letter] || 0) +1;
-        //console.log(counter[letter]);
+        console.log(counter[letter]);
         
     }
-
     for( let element of string2){
         if(!counter[element]){
             return false;
+            
         }
+        // console.log(counter[element]);
         counter[element] -= 1;
     }
     return true ;
@@ -39,13 +40,20 @@ var isAnagram = function(s, t) {
     const sort = str => str.split('').sort((a, b) => a.localeCompare(b)).join('');
     return sort(s)===sort(t) ? true : false;
 };
+const abc = isAnagram("hello","lleho");
+console.log(abc);
 
 
 //=================================================================================
 
-var isAnagram = function(s, t) {
-    let str1 = s.split("").sort().join("")
+var isAnagram1 = function(s, t) {
+    let str1 = s.split("").sort().join("");
+    // console.log(str1);
     let str2 = t.split("").sort().join("")
+    // console.log(str2);
+
     if(str1 == str2) return true;
     else return false;
 };
+const res = isAnagram1("Hello","lloHe")
+console.log(res);

@@ -1,6 +1,24 @@
 //  [2,3,4,5] => 2*3*4*5 = 120
 // product of array those element present in array [ 2,3,4,5]= 2*3*4*5=120
 
+
+function productArr(arr){
+    if(arr.length ==1) return arr;
+    let product = 1;
+    for(let i =0; i<arr.length; i++){
+        product = product*arr[i]
+    }
+    return product;
+
+}
+const abc = productArr([3,4,5,10])
+console.log(abc);
+
+
+//================================================
+
+// by using recursion
+
 function productArray(nums){
     // base condition 
     if(nums.length === 0){
@@ -49,3 +67,9 @@ function productEven(num){
 }
 const output = productEven(4)
 console.log(output);
+
+
+
+let array = [2,3,4,5,6]
+ array = array.slice(2,5)
+ console.log(array);

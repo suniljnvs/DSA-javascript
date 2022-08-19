@@ -70,3 +70,11 @@ function reverse(arr){
 }
 const result3=reverse([1,2,3,4,5])
 console.log(result3);
+
+
+function rotateString(arr){
+    for(let i =0; i<arr.length;i++){
+        let temp = arr[0];
+        
+    }
+}

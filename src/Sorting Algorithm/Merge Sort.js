@@ -9,43 +9,42 @@ array. The whole process of sorting an array of N integers can be summarized int
 
 */
 
+//==============================================================
+function mergeSort(array) {
+    if (array.length === 1) return array
 
-// function mergeSort (arr) {
-//     if (arr.length < 2) return arr;
-//     var mid = Math.floor(arr.length /2);
-//     var subLeft = mergeSort(arr.slice(0,mid));
-//     var subRight = mergeSort(arr.slice(mid));
-//     return merge(subLeft, subRight);
-    
-//   }
-//   const arr=[23,45,12,1,3,5,67,89,45]
-//   mergeSort(arr)
-//   console.log(arr);
+    let mid = Math.floor(array.length / 2)   //O(1)
+    let left = array.slice(0, mid)           // O(1)
+    let right = array.slice(mid)             // O(1)   
 
-
-function mergeSortDown(array){
-    if(array.length <= 1){
-        return array;
-    }
-
-    const mid =Math.floor(array.length / 2);
-    const left = array.slice(0,mid)
-    const right =array.slice(mid)
-// console.log(right);
-// console.log(left);
-    return mergeSort(mergeSortDown(left), mergeSortDown(right));
+    // recursive function for continously cutting array into half
+    return merge(mergeSort(left), mergeSort(right))
 }
-function mergeSort(left, right){
-    const array =[];
-    while(left.length && right.length){
-        if(left[0]< right[0]){
-            array.push(left.shift())
-        }else{
-            array.push(right.shift())
+
+function merge(left, right) {
+    // console.log(left + "----"+ right); 
+    let res = []
+    let i = 0
+    let j = 0
+    while (i < left.length && j < right.length) {
+        if (left[i] < right[j]) {
+            res.push(left[i])
+            i++
+        } else {
+            res.push(right[j])
+            j++
         }
     }
-    return array.concat(left.slice()).concat(right.slice());
+    while (i < left.length) {
+        res.push(left[i])
+        i++
+    }
+    while (j < right.length) {
+        res.push(right[j])
+        j++
+    }
+    return res
 }
 
-const result = mergeSortDown([4,8,1,2,5,9,3,6]);
-console.log(result);
+console.log(mergeSort([6,5,4,3,2,1]))
+
