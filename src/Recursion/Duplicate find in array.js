@@ -11,10 +11,10 @@
 // by Hash Map () 
 function duplicates(arr){
     let map = new Map()
-
     for ( let i=0 ; i< arr.length; i++){
         if(map.get (arr[i])===undefined){
             map.set(arr[i],1);
+            
         }else{
             map.set(arr[i],map.get(arr[i])+1);
         }
@@ -42,10 +42,18 @@ console.log(eleDuplicate);
       for(let i=0;i<nums.length;i++){
           if(nums[i] in obj === false) obj[nums[i]] = 1;
           else obj[nums[i]]+=1;
-          if(obj[nums[i]] === 2) res.push(nums[i]);
+          if(obj[nums[i]] == 2) res.push(nums[i]);
       }
       return res;   
   };
 
-  const arr =findDuplicates([2,3,3,4,5,6,7,1,1,2,2]);
+  const arr =findDuplicates([2,3,3,3,4,5,6,7,1,1,2,2]);
   console.log(arr);
+
+
+
+  
+
+
+
+

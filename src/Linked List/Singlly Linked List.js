@@ -182,17 +182,17 @@ list.insertInLastOfList(65);
 // list.insertInLastOfList(25)
 list.prinList();
 console.log("===========")
-list.insertAfterKthPosition(100,1)
+// list.insertAfterKthPosition(100,1)
 
 
 
- list.prinList();
+//  list.prinList();
 
 // list.deleteFromFront();
-// list.deleteFromLast();
+list.deleteFromLast();
 // list.deleteFromkthPosition(3);
 // list.reverseList()
-// list.prinList()
+list.prinList()
 
 // list.lastNode.next =list.firstNode.next.next.next;
 // list.insertInFrontOfList(1);

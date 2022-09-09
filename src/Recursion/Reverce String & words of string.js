@@ -18,6 +18,7 @@ function reverse(str){
 }
 function reverseSentenceByWord(sentence){
     let words= sentence.split(" ");
+    console.log(words);
     for(let i=0;i<words.length; i++){
         words[i]= reverse(words[i])
         console.log(words[i]);

@@ -47,4 +47,7 @@ function merge(left, right) {
 }
 
 console.log(mergeSort([6,5,4,3,2,1]))
+// const abc = mergeSort([6,5,4,3,2,1])
+// console.log(abc);
+// console.log(abc[3])
 

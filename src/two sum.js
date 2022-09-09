@@ -27,3 +27,5 @@ function twoSum(arr, target) {
 }
 const res = twoSum([2,4,5,6,7],4)
 console.log(res);
+
+

@@ -12,7 +12,7 @@ function CapitalizeFristElement(arr , index){
     }
 }
 
-CapitalizeFristElement(arr,0)  // index 0 means start from 1st element se capital karega
+CapitalizeFristElement(arr,0 )  // index 0 means start from 1st element se capital karega
 console.log(arr);
 
 
@@ -23,9 +23,6 @@ function reverse(str){
     return reverse(str.slice(1)) +str[0]
     
 } //  "hello"  => "olleh"   output aayega
-
-//==========================================================================
-
 function reverseSentWorld(sent){
         let words =sent.split(" ")
         for(let i=0; i<words.length; i++){

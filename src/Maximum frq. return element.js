@@ -1,9 +1,9 @@
 function maxFrequency(arr){
     let map = new Map();
-    if(!arr.length){
-        return null;
+    // if(!arr.length){
+    //     return null;
 
-    }
+    // }
     let maxFreq=1;
     let maxFreqElem=arr[0];
     for( let i=0; i<arr.length;i++){
@@ -19,7 +19,7 @@ function maxFrequency(arr){
         }
 
     }
-    console.log(maxFreqElem,maxFreq);
+    console.log(maxFreqElem + " => " + maxFreq);
 }
 
 maxFrequency([1,2,3,4,5,6,7,1,1,1,1,1,2,3,4,5]);

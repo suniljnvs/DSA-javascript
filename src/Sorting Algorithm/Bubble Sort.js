@@ -3,7 +3,7 @@
 // check the element adjesent element ( ye apne bagal bagal wale ko compaire karta hh aur swap kar deta hh)
 
 function bubbleSort2(arr){
-    if(arr.length<=1) return arr;
+    // if(arr.length<=1) return arr;
     for( let i =arr.length;i>0;i--){  // i-- esliye kiye hh kyuki last wala element har baar large  hota jayega esliye ek baar i km karte jayenge
         for(let j=0;j<arr.length-1;j++){
             if(arr[j]> arr[j+1]){

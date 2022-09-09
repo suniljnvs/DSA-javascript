@@ -8,7 +8,7 @@ function solution(str1, str2) {
       for(let j = str2.length -1; j >= 0; j--) {
         if( str2[j] === str1[i] ) {
           output.push(str2[j]) 
-          console.log(output);
+          // console.log(output);
           break
         }      
       } 
