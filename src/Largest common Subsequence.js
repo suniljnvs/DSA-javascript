@@ -18,5 +18,5 @@ function solution(str1, str2) {
     return output.reverse().join('')
   
   }
-  console.log(solution('ABAZDC', 'BACBAD')) 
+  console.log(solution('ABAZDC', 'BCBD')) 
   

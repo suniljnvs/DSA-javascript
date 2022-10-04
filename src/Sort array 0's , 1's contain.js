@@ -24,3 +24,23 @@ function sort01(arr) {
 const arr= [0,1,1,1,0,0,1,0,1,0,1,0,1,0,1,1,0,1];
 sort01(arr);
 console.log(arr);
+
+//==========================================================
+// if x's and o's are both counting numbers are same then return true ; otherwise return false;
+// only pass the value in string x and o   like "xxooxo"
+function match(str){
+    let count =0;
+    for(let i=0;i<str.length;i++){
+        if(str[i] == 'x') return count++;
+        if(str[i] == 'o') return count--;
+        
+    }
+    if(count > 0 || count < 0){
+        return "false";
+    }else{
+        return "true";
+    }
+    
+}
+const res = match("xxooxo");
+console.log(res)

@@ -11,6 +11,9 @@ function twoSumBrute(arr, target) {
         }
     }
 }
+const res1 = twoSumBrute([2,4,5,6,7],10)
+console.log(res1);
+
 
 
 // solution using hashmap - O(n)
