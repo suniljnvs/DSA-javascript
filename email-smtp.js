@@ -6,7 +6,7 @@ function sendEmail(email_to,email_subject,email_text){
           service: 'gmail',
           auth: {
               user: "sunilk***********98@gmail.com",//jnvs
-              pass: "sgaij********akyeh"
+              pass: "sgaij********akyeh" //16 digit code or yours email password
           },
           tls: {
               rejectUnauthorized: false
@@ -32,6 +32,8 @@ module.exports = {sendEmail};  // require on that page where you generate otp
 
 
 const otp = Math.floor(Math.random() * 1000000); // generate 6 digit random otp
+
+await nodemail.sendEmail("pra********vs@gmail.com","login verification code","Your 6 digit OTP:- "+otp+" , It is valid for next 5min ")
 
 
 // otp schema in model
