@@ -19,4 +19,9 @@ function flatArr(arr) {
 }
 
 const result = flatArr([1, 2, [3, 4], [5, 6, 7, 8],[9,10]])
+// console.log(result);
+console.log("gdfdd");
+console.log('gdgdggdgdd');
+console.log(result);
+console.log("gddgdggddddddddddddd");
 console.log(result);

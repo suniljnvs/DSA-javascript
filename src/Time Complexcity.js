@@ -172,3 +172,5 @@ function sort(string){
 const abc =sort("sunil")  // [  6, 1, 7, 2, 5, 3, 4]
 
 console.log(abc);
+
+
